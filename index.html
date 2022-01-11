@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Our project just needs Font Awesome solid + brand -->
+  <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+  <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+  <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
 </head>
 
 <body>
@@ -49,60 +53,114 @@
       </div>
     </header>
     <main class="main">
-      <div class="conteiner main-wrap">
-        <div class="registration">
-          <p class="header-registration">
-            BOOST UP YOUR LOCAL BUSINESS
-          </p>
-          <p class="header-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting
-          </p>
-          <form action="https://www.figma.com/file/ABHv7B5uNRtuJ7WQgLvXJO/BusinessSite?node-id=0%3A1" method="post"
-            class="registration-input-fields">
-            <div class="registration-input full-name">
-              <label for="full-name">
-                <img src="./assets/svg/Person.svg" alt="Person" class="registration-input-person">
-              </label>
-              <input type="text" name="Full Name" placeholder="Full Name" id="full-name" required>
+      <div class="main-background">
+        <div class="conteiner main-wrap">
+          <div class="registration">
+            <p class="header-registration">
+              BOOST UP YOUR LOCAL BUSINESS
+            </p>
+            <p class="header-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting
+            </p>
+            <form action="https://www.figma.com/file/ABHv7B5uNRtuJ7WQgLvXJO/BusinessSite?node-id=0%3A1" method="post"
+              class="registration-input-fields">
+              <div class="registration-input full-name">
+                <label for="full-name">
+                  <img src="./assets/svg/Person.svg" alt="Person" class="registration-input-person">
+                </label>
+                <input type="text" name="Full Name" placeholder="Full Name" id="full-name" required>
+              </div>
+              <div class="registration-input message">
+                <label for="message">
+                  <img src="./assets/svg/Message.svg" alt="Message" class="registration-input-message">
+                </label>
+                <input type="email" name="message" placeholder="Email Address" id="message" required>
+              </div>
+              <div class="registration-input phone">
+                <label for="number-phone">
+                  <img src="./assets/svg/Phone.svg" alt="Phone" class="registration-input-phone">
+                </label>
+                <input type="tel" min="0" name="Phone Number" list="tel-list" placeholder="Phone Number"
+                  id="number-phone" pattern="+38\s[0-9]{3}\s[0-9]{3}[-][0-9]{2}[-][0-9]{2}" required>
+                <datalist id="tel-list">
+                  <option value="+38 067 123-45-67" label="Телефонный номер №1">
+                  <option value="+38 050 123-45-68" label="Телефонный номер №2">
+                </datalist>
+              </div>
+              <button type="submit" class="registration-input-button">
+                <p class="registration-input-button-text">
+                  REQUEST A QUOTE
+                </p>
+              </button>
+            </form>
+          </div>
+          <div class="leaf-through-adverts">
+            <label class="leaf-through-wrap" for="leaf-through-1">
+              <img src="./assets/png/Laptop.png" alt="Laptop" class="leaf-through-laptop">
+            </label>
+            <label class="leaf-through-wrap" for="leaf-through-2" id="second_photo">
+              <img src="./assets/png/Phone.png" alt="Phone" class="leaf-through-phone">
+            </label>
+            <label class="leaf-through-wrap" for="leaf-through-3">
+              <img src="./assets/png/smart-watch.png" alt="Smart Watch" class="leaf-through-smart-watch">
+            </label>
+            <div class="leaf-through-input-radio">
+              <input type="radio" name="leaf" class="laptop" id="leaf-through-1" checked>
+              <input type="radio" name="leaf" class="phone" id="leaf-through-2">
+              <input type="radio" name="leaf" class="smart-watch" id="leaf-through-3">
             </div>
-            <div class="registration-input message">
-              <label for="message">
-                <img src="./assets/svg/Message.svg" alt="Message" class="registration-input-message">
-              </label>
-              <input type="email" name="message" placeholder="Email Address" id="message" required>
-            </div>
-            <div class="registration-input phone">
-              <label for="number-phone">
-                <img src="./assets/svg/Phone.svg" alt="Phone" class="registration-input-phone">
-              </label>
-              <input type="tel" min="0" name="Phone Number" list="tel-list" placeholder="Phone Number" id="number-phone"
-                pattern="+38\s[0-9]{3}\s[0-9]{3}[-][0-9]{2}[-][0-9]{2}" required>
-              <datalist id="tel-list">
-                <option value="+38 067 123-45-67" label="Телефонный номер №1">
-                <option value="+38 050 123-45-68" label="Телефонный номер №2">
-              </datalist>
-            </div>
-            <button type="submit" class="registration-input-button">
-              <p class="registration-input-button-text">
-                REQUEST A QUOTE
-              </p>
-            </button>
-          </form>
+          </div>
         </div>
-        <div class="leaf-through-adverts">
-          <label class="leaf-through-wrap" for="leaf-through-1">
-            <img src="./assets/png/Laptop.png" alt="Laptop" class="leaf-through-laptop">
-          </label>
-          <label class="leaf-through-wrap" for="leaf-through-2" id="second_photo">
-            <img src="./assets/png/Phone.png" alt="Phone" class="leaf-through-phone">
-          </label>
-          <label class="leaf-through-wrap" for="leaf-through-3">
-            <img src="./assets/png/smart-watch.png" alt="Smart Watch" class="leaf-through-smart-watch">
-          </label>
-          <div class="leaf-through-input-radio">
-            <input type="radio" name="leaf" class="laptop" id="leaf-through-1" checked>
-            <input type="radio" name="leaf" class="phone" id="leaf-through-2">
-            <input type="radio" name="leaf" class="smart-watch" id="leaf-through-3">
+      </div>
+      <div class="conteiner our-services">
+        <p class="h1">OUR SERVICES</p>
+        <p class="text-our-services">Lorem Ipsum is simply dummy Business industry.</p>
+        <div class="our-services-flex">
+          <div class="our-services-conteiner">
+            <div class="our-services-svg-photo">
+              <i class="far fa-clock clock__gray"></i>
+            </div>
+            <div class="our-services-header-and-text">
+              <h4 class="our-services-header">FONT-AWESOME ICONS</h4>
+              <p class="our-services-text">Lorem Ipsum is simply dum my text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer.</p>
+            </div>
+          </div>
+          <div class="our-services-conteiner">
+            <div class="our-services-svg-photo"></div>
+            <div class="our-services-header-and-text">
+              <h4 class="our-services-header"></h4>
+              <p class="our-services-text"></p>
+            </div>
+          </div>
+          <div class="our-services-conteiner">
+            <div class="our-services-svg-photo"></div>
+            <div class="our-services-header-and-text">
+              <h4 class="our-services-header"></h4>
+              <p class="our-services-text"></p>
+            </div>
+          </div>
+          <div class="our-services-conteiner">
+            <div class="our-services-svg-photo"></div>
+            <div class="our-services-header-and-text">
+              <h4 class="our-services-header"></h4>
+              <p class="our-services-text"></p>
+            </div>
+          </div>
+          <div class="our-services-conteiner">
+            <div class="our-services-svg-photo"></div>
+            <div class="our-services-header-and-text">
+              <h4 class="our-services-header"></h4>
+              <p class="our-services-text"></p>
+            </div>
+          </div>
+          <div class="our-services-conteiner">
+            <div class="our-services-svg-photo"></div>
+            <div class="our-services-header-and-text">
+              <h4 class="our-services-header"></h4>
+              <p class="our-services-text"></p>
+            </div>
           </div>
         </div>
       </div>

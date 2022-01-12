@@ -1,0 +1,57 @@
+.about-us {
+  &-wrap {
+    background-color: #FFC155;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-picture {
+    max-width: 850px;
+    margin-bottom: -2px;
+  }
+  &-png {
+    width: 100%;
+    object-fit: cover;
+  }
+  &-head-and-text {
+    margin: 40px 81px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &-head {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: $weight-fatter;
+    margin-bottom: 18.88px;
+  }
+  &-text {
+    font-size: 13px;
+    line-height: 15.6px;
+    font-weight: $weight-normal;
+    max-width: 475px;
+    margin-bottom: 51.6px;
+  }
+  &-button {
+    border: 1px solid #E7AD48;
+    width: 144px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: $weight-normal;
+    background: transparent;
+    color: $white;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 1px;
+    &:hover {
+      background: rgba(255,255,255,.2);
+    }
+    &:active {
+      background: $white;
+    }
+  }
+}

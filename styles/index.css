@@ -495,9 +495,20 @@ input[type="radio"]:checked {
 
 .our-services-flex {
   margin-top: 85px;
+  margin-bottom: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.our-services-conteiner {
+.our-services__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,13 +519,70 @@ input[type="radio"]:checked {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 78px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our-services-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   max-width: 557px;
 }
 
+.our-services-conteiner:nth-child(1) {
+  margin-bottom: 78px;
+}
+
 .our-services-svg-photo {
-  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 45px;
   margin-right: 35px;
+  cursor: default;
+}
+
+.our-services-svg-photo-icon__before-and-after {
+  color: #709DCA;
+  font-size: 45px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.our-services-svg-photo-icon__before-and-after:hover {
+  color: #F6772C;
+}
+
+.our-services-svg-photo-half-turned {
+  color: #709DCA;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 33px;
+}
+
+.our-services-svg-photo__flex {
+  width: 46.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-services-svg-photo__flex:hover .our-services-svg-photo-half-turned {
+  color: #F6772C;
 }
 
 .our-services-header {
@@ -523,6 +591,7 @@ input[type="radio"]:checked {
   font-weight: 700;
   color: #394B50;
   max-width: 185px;
+  margin-bottom: 14.88px;
 }
 
 .our-services-text {
@@ -531,6 +600,10 @@ input[type="radio"]:checked {
   font-weight: 400;
   color: #7B7B7B;
   max-width: 432px;
+}
+
+.tv__size {
+  font-size: 32px;
 }
 
 .h1 {
@@ -549,4 +622,86 @@ input[type="radio"]:checked {
   line-height: 28.8px;
   font-weight: 400;
   max-width: 530px;
+}
+
+.about-us-wrap {
+  background-color: #FFC155;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-us-picture {
+  max-width: 850px;
+  margin-bottom: -2px;
+}
+
+.about-us-png {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-us-head-and-text {
+  margin: 40px 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-us-head {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  margin-bottom: 18.88px;
+}
+
+.about-us-text {
+  font-size: 13px;
+  line-height: 15.6px;
+  font-weight: 400;
+  max-width: 475px;
+  margin-bottom: 51.6px;
+}
+
+.about-us-button {
+  border: 1px solid #E7AD48;
+  width: 144px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-radius: 1px;
+}
+
+.about-us-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.about-us-button:active {
+  background: #ffffff;
 }

@@ -646,7 +646,8 @@ input[type="radio"]:checked {
 }
 
 .about-us-head-and-text {
-  margin: 40px 81px;
+  padding: 40px 81px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,7 +696,7 @@ input[type="radio"]:checked {
   cursor: pointer;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 .about-us-button:hover {
@@ -704,4 +705,167 @@ input[type="radio"]:checked {
 
 .about-us-button:active {
   background: #ffffff;
+}
+
+.price {
+  padding-top: 98px;
+  background-color: #E7EDF3;
+}
+
+.price-h1__color {
+  margin-top: 0;
+  color: #394B50;
+  max-width: 311px;
+}
+
+.price-text__color {
+  color: #394B50;
+  max-width: 675px;
+  padding-bottom: 54px;
+}
+
+.price-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 54px 0 164px;
+}
+
+.price-plan-whichever {
+  margin: 0 1px;
+  max-width: 391px;
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 30px solid #E7EDF3;
+  border-bottom: 30px solid #E7EDF3;
+  padding: 50px 31px 48px 31px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price-plan-whichever:hover {
+  background-color: #709DCA;
+  border-top: 30px solid #709DCA;
+  border-bottom: 30px solid #709DCA;
+}
+
+.price-plan-whichever:hover .price-plan-whichever-h2 {
+  color: #ffffff;
+}
+
+.price-plan-whichever:hover .price-plan-whichever-cost {
+  color: #ffffff;
+}
+
+.price-plan-whichever:hover .price-plan-whichever-about-plan {
+  color: #ffffff;
+}
+
+.price-plan-whichever:hover hr {
+  color: #8EB8E2;
+}
+
+.price-plan-whichever:hover .price-plan-whichever-cost-dollar-gold {
+  display: none;
+}
+
+.price-plan-whichever:hover .price-plan-whichever-cost-dollar-white {
+  display: block;
+}
+
+.price-plan-whichever:hover .price-plan-whichever {
+  margin: 0;
+  padding: 0 2px;
+}
+
+.price-plan-whichever-h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #818B95;
+}
+
+.price-plan-whichever-cost {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 700;
+  color: #FFBB42;
+}
+
+.price-plan-whichever-cost__margin {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.price-plan-whichever-cost-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-plan-whichever-cost-dollar {
+  margin-bottom: 14px;
+}
+
+.price-plan-whichever-cost-dollar-white {
+  display: none;
+}
+
+.price-plan-whichever-about-plan {
+  margin: 12px 0;
+  color: #B5BBC1;
+  font-size: 13.5px;
+  line-height: 16.2px;
+  font-weight: 400;
+}
+
+.price-plan-whichever-button {
+  width: 131px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 19px;
+  background-color: #FFBB42;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  border: 0;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #E2E9F0;
+  margin: 0;
+  border: 0;
+}
+
+.per-month {
+  margin-top: 0;
+  margin-bottom: 42px;
+  color: #818B95;
 }

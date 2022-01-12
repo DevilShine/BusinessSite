@@ -1,0 +1,119 @@
+.price {
+  padding-top: 98px;
+  background-color: #E7EDF3;
+  &-h1__color {
+    margin-top: 0;
+    color: $navy-blue;
+    max-width: 311px;
+  }
+  &-text__color {
+    color: $navy-blue;
+    max-width: 675px;
+    padding-bottom: 54px;
+  }
+  &-plan {
+    display: flex;
+    justify-content: center;
+    padding: 54px 0 164px;
+    &-whichever {
+      margin: 0 1px;
+      max-width: 391px;
+      width: 100%;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-top: 30px solid #E7EDF3;
+      border-bottom: 30px solid #E7EDF3;
+      padding: 50px 31px 48px 31px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #709DCA;
+        .price-plan-whichever-h2 {
+          color: $white;
+        }
+        .price-plan-whichever-cost {
+          color: $white;
+        }
+        .price-plan-whichever-about-plan {
+          color: $white;
+        }
+        hr {
+          color: #8EB8E2;
+        }
+        .price-plan-whichever-cost-dollar-gold {
+          display: none;
+        }
+        .price-plan-whichever-cost-dollar-white {
+          display: block;
+        }
+        border-top: 30px solid #709DCA;
+        border-bottom: 30px solid #709DCA;
+        .price-plan-whichever {
+          margin: 0;
+          padding: 0 2px;
+        }
+      }
+      &-h2 {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: $weight-thin;
+        color: #818B95;
+      }
+      &-cost {
+        &__margin {
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        &-wrap {
+          display: inline-flex;
+          align-items: center;
+        }
+        &-dollar {
+          &-white {
+            display: none;
+          }
+          margin-bottom: 14px;
+        }
+        font-size: 60px;
+        line-height: 72px;
+        font-weight: $weight-bold;
+        color:#FFBB42;
+      }
+      &-about-plan {
+        
+        margin: 12px 0;
+        color: #B5BBC1;
+        font-size: 13.5px;
+        line-height: 16.2px;
+        font-weight: $weight-normal;
+      }
+      &-button {
+        width: 131px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 19px;
+        background-color: #FFBB42;
+        color: $white;
+        font-size: 14px;
+        line-height: 16.8px;
+        font-weight: $weight-normal;
+        border: 0;
+      }
+    }
+  }
+}
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #E2E9F0;
+  margin: 0;
+  border: 0;
+}
+.per-month {
+  margin-top: 0;
+  margin-bottom: 42px;
+  color: #818B95;
+}

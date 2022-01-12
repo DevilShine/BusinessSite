@@ -8,6 +8,12 @@ function displayWindowSize() {
     document.getElementById("nav").style.display = "flex";
     document.getElementById("nav-resize").style.display = "none";
   }
+
+  if (w < 1487) {
+    document.getElementById("about-us-wrap").style.justifyContent = "center";
+  } else {
+    document.getElementById("about-us-wrap").style.justifyContent = "normal";
+  }
 }
 
 var wf = document.documentElement.clientWidth;

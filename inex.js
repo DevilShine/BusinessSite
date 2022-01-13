@@ -24,6 +24,12 @@ function displayWindowSize() {
     document.getElementById("explanation-seriatim-item-wrap").style.margin = "51px 0 0 0";
     document.getElementById("explanation-seriatim-item-wrap").style.justifyContent = "space-between";
   }
+
+  if (w < 364) {
+    document.getElementById("quotes-closing").style.top = "120px";
+  } else {
+    document.getElementById("quotes-closing").style.top = "90px";
+  }
 }
 
 var wf = document.documentElement.clientWidth;
@@ -50,6 +56,12 @@ if (wf < 916) {
   document.getElementById("arrow").style.justifyContent = "flex";
   document.getElementById("explanation-seriatim-item-wrap").style.margin = "51px 0 0 0";
   document.getElementById("explanation-seriatim-item-wrap").style.justifyContent = "space-between";
+}
+
+if (wf < 364) {
+  document.getElementById("quotes-closing").style.top = "120px";
+} else {
+  document.getElementById("quotes-closing").style.top = "90px";
 }
 
 window.addEventListener("resize", displayWindowSize);

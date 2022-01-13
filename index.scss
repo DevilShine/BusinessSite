@@ -25,3 +25,18 @@ body {
 @import "./scss/price";
 @import "./scss/explanation";
 @import "./scss/heppy-clients";
+@import "./scss/newsletter";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #709DCA;
+  &-link {
+    margin: 14px 0 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15.23px;
+    font-weight: $weight-normal;
+    color: $white;
+  }
+}

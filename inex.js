@@ -30,6 +30,12 @@ function displayWindowSize() {
   } else {
     document.getElementById("quotes-closing").style.top = "90px";
   }
+
+  if (w < 620) {
+    document.getElementById("newsletter-emeil").style.width = "281px";
+  } else {
+    document.getElementById("newsletter-emeil").style.width = "388px";
+  }
 }
 
 var wf = document.documentElement.clientWidth;
@@ -62,6 +68,12 @@ if (wf < 364) {
   document.getElementById("quotes-closing").style.top = "120px";
 } else {
   document.getElementById("quotes-closing").style.top = "90px";
+}
+
+if (wf < 620) {
+  document.getElementById("newsletter-emeil").style.width = "281px";
+} else {
+  document.getElementById("newsletter-emeil").style.width = "388px";
 }
 
 window.addEventListener("resize", displayWindowSize);

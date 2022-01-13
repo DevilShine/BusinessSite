@@ -45,6 +45,12 @@
       height: 48px;
       border: 0;
       background-color: #FFBB42;
+      &:hover {
+        background: #c37f06;
+      }
+      &:active {
+        opacity: 0.7;
+      }
     }
     &-button-text {
       color: $white;

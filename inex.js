@@ -31,10 +31,20 @@ function displayWindowSize() {
     document.getElementById("quotes-closing").style.top = "90px";
   }
 
-  if (w < 620) {
+  if (w < 910) {
     document.getElementById("newsletter-emeil").style.width = "281px";
   } else {
     document.getElementById("newsletter-emeil").style.width = "388px";
+  }
+
+  if (w < 582) {
+    document.getElementById("registration-input-fields").style.flexDirection = "column";
+    document.getElementById("registration-input-fields").style.alignItems = "center";
+    document.getElementById("registration-input-fields").style.justifyContent = "normal";
+  } else {
+    document.getElementById("registration-input-fields").style.flexDirection = "row";
+    document.getElementById("registration-input-fields").style.alignItems = "normal";
+    document.getElementById("registration-input-fields").style.justifyContent = "center";
   }
 }
 
@@ -70,10 +80,20 @@ if (wf < 364) {
   document.getElementById("quotes-closing").style.top = "90px";
 }
 
-if (wf < 620) {
+if (wf < 910) {
   document.getElementById("newsletter-emeil").style.width = "281px";
 } else {
   document.getElementById("newsletter-emeil").style.width = "388px";
+}
+
+if (wf < 582) {
+  document.getElementById("registration-input-fields").style.flexDirection = "column";
+  document.getElementById("registration-input-fields").style.alignItems = "center";
+  document.getElementById("registration-input-fields").style.justifyContent = "normal";
+} else {
+  document.getElementById("registration-input-fields").style.flexDirection = "row";
+  document.getElementById("registration-input-fields").style.alignItems = "normal";
+  document.getElementById("registration-input-fields").style.justifyContent = "center";
 }
 
 window.addEventListener("resize", displayWindowSize);
